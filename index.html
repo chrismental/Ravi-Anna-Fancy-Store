@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Ravi Anna Fancy Store - Premium luxury gifts, women's jewelry, accessories, handbags and festival gift items. Shop elegant feminine accessories.">
+    <title>Ravi Anna Fancy Store | Premium Luxury Gifts & Accessories</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ==================== HEADER & NAVIGATION ==================== -->
+    <header class="header" id="header">
+        <div class="header-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">✦</span>
+                <span class="logo-text">Ravi Anna</span>
+                <span class="logo-sub">Fancy Store</span>
+            </a>
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="shop.html" class="nav-link">Shop</a></li>
+                    <li><a href="couples.html" class="nav-link">Couples</a></li>
+                    <li><a href="friendship.html" class="nav-link">Friendship</a></li>
+                    <li><a href="wedding.html" class="nav-link">Wedding</a></li>
+                    <li><a href="birthday.html" class="nav-link">Birthday</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="search-btn" id="searchBtn" aria-label="Search">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8" />
+                        <path d="m21 21-4.35-4.35" />
+                    </svg>
+                </button>
+                <button class="cart-btn" id="cartBtn" aria-label="Cart">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="9" cy="21" r="1" />
+                        <circle cx="20" cy="21" r="1" />
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+                    </svg>
+                    <span class="cart-count">3</span>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================== SEARCH MODAL ==================== -->
+    <div class="search-modal" id="searchModal">
+        <div class="search-modal-content">
+            <button class="search-close" id="searchClose">&times;</button>
+            <input type="text" class="search-input" placeholder="Search for jewelry, gifts, accessories...">
+            <div class="search-suggestions">
+                <span>Popular:</span>
+                <a href="#">Gold Earrings</a>
+                <a href="#">Gift Hampers</a>
+                <a href="#">Bracelets</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero" id="home">
+        <div class="hero-slider" id="heroSlider">
+            <div class="hero-slide active" style="--bg: linear-gradient(135deg, #fdf6f0 0%, #f8e8dc 100%)">
+                <div class="hero-content">
+                    <span class="hero-badge">✨ New Collection 2024</span>
+                    <h1 class="hero-title">Luxury Gifts for Every Occasion</h1>
+                    <p class="hero-text">Discover our exquisite collection of handcrafted jewelry, elegant accessories,
+                        and premium gift items that speak of timeless beauty.</p>
+                    <div class="hero-btns">
+                        <a href="#shop" class="btn btn-primary">Shop Now</a>
+                        <a href="#categories" class="btn btn-secondary">Explore Collection</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <!-- Replace with real product image -->
+                    <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=600&h=700&fit=crop"
+                        alt="Luxury Jewelry Collection">
+                </div>
+            </div>
+            <div class="hero-slide" style="--bg: linear-gradient(135deg, #f5e6f0 0%, #e8d4e0 100%)">
+                <div class="hero-content">
+                    <span class="hero-badge">💝 Festival Special</span>
+                    <h1 class="hero-title">Celebrate with Elegance</h1>
+                    <p class="hero-text">Make every celebration memorable with our curated selection of festival gifts
+                        and wedding accessories.</p>
+                    <div class="hero-btns">
+                        <a href="#festival" class="btn btn-primary">View Festival Collection</a>
+                        <a href="#offers" class="btn btn-secondary">See Offers</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <!-- Replace with real product image -->
+                    <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=600&h=700&fit=crop"
+                        alt="Festival Gift Collection">
+                </div>
+            </div>
+            <div class="hero-slide" style="--bg: linear-gradient(135deg, #e8f0f5 0%, #d4e0e8 100%)">
+                <div class="hero-content">
+                    <span class="hero-badge">👜 Trending Now</span>
+                    <h1 class="hero-title">Designer Handbags & More</h1>
+                    <p class="hero-text">Elevate your style with our premium collection of handbags, clutches, and
+                        fashion accessories.</p>
+                    <div class="hero-btns">
+                        <a href="#categories" class="btn btn-primary">Shop Bags</a>
+                        <a href="#new-arrivals" class="btn btn-secondary">New Arrivals</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <!-- Replace with real product image -->
+                    <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=600&h=700&fit=crop"
+                        alt="Designer Handbag Collection">
+                </div>
+            </div>
+        </div>
+        <div class="hero-nav">
+            <button class="hero-prev" id="heroPrev">❮</button>
+            <div class="hero-dots" id="heroDots"></div>
+            <button class="hero-next" id="heroNext">❯</button>
+        </div>
+    </section>
+
+    <!-- ==================== FEATURED CATEGORIES ==================== -->
+    <section class="categories section" id="categories">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Explore</span>
+                <h2 class="section-title">Shop by Category</h2>
+                <p class="section-subtitle">Find the perfect piece from our curated collections</p>
+            </div>
+            <div class="categories-grid">
+                <a href="#" class="category-card" data-aos="fade-up">
+                    <div class="category-img">
+                        <!-- Replace with real category image -->
+                        <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=400&h=500&fit=crop"
+                            alt="Earrings Collection">
+                    </div>
+                    <div class="category-overlay">
+                        <h3>Earrings</h3>
+                        <span>50+ Items</span>
+                    </div>
+                </a>
+                <a href="#" class="category-card" data-aos="fade-up" data-delay="100">
+                    <div class="category-img">
+                        <!-- Replace with real category image -->
+                        <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=400&h=500&fit=crop"
+                            alt="Necklaces Collection">
+                    </div>
+                    <div class="category-overlay">
+                        <h3>Necklaces</h3>
+                        <span>80+ Items</span>
+                    </div>
+                </a>
+                <a href="#" class="category-card" data-aos="fade-up" data-delay="200">
+                    <div class="category-img">
+                        <!-- Replace with real category image -->
+                        <img src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=400&h=500&fit=crop"
+                            alt="Bracelets Collection">
+                    </div>
+                    <div class="category-overlay">
+                        <h3>Bracelets</h3>
+                        <span>45+ Items</span>
+                    </div>
+                </a>
+                <a href="#" class="category-card" data-aos="fade-up" data-delay="300">
+                    <div class="category-img">
+                        <!-- Replace with real category image -->
+                        <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=400&h=500&fit=crop"
+                            alt="Gift Hampers">
+                    </div>
+                    <div class="category-overlay">
+                        <h3>Gift Hampers</h3>
+                        <span>30+ Items</span>
+                    </div>
+                </a>
+                <a href="#" class="category-card" data-aos="fade-up" data-delay="400">
+                    <div class="category-img">
+                        <!-- Replace with real category image -->
+                        <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=400&h=500&fit=crop"
+                            alt="Bags Collection">
+                    </div>
+                    <div class="category-overlay">
+                        <h3>Bags</h3>
+                        <span>60+ Items</span>
+                    </div>
+                </a>
+                <a href="#" class="category-card" data-aos="fade-up" data-delay="500">
+                    <div class="category-img">
+                        <!-- Replace with real category image -->
+                        <img src="https://images.unsplash.com/photo-1513885535751-8b9238bd345a?w=400&h=500&fit=crop"
+                            alt="Festival Gifts">
+                    </div>
+                    <div class="category-overlay">
+                        <h3>Festival Gifts</h3>
+                        <span>40+ Items</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FEATURED PRODUCTS CAROUSEL ==================== -->
+    <section class="featured-products section" id="shop">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Featured</span>
+                <h2 class="section-title">Trending Products</h2>
+                <p class="section-subtitle">Our most loved items this season</p>
+            </div>
+            <div class="carousel-container">
+                <button class="carousel-btn prev" id="carouselPrev">❮</button>
+                <div class="products-carousel" id="productsCarousel">
+                    <div class="product-card">
+                        <div class="product-badge hot">HOT 🔥</div>
+                        <div class="product-img">
+                            <!-- Replace with real product image -->
+                            <img src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=300&h=350&fit=crop"
+                                alt="Pearl Drop Earrings" class="img-front">
+                            <img src="https://images.unsplash.com/photo-1630019852942-f89202989a59?w=300&h=350&fit=crop"
+                                alt="Pearl Drop Earrings Back" class="img-back">
+                            <div class="product-actions">
+                                <button class="action-btn quick-view" data-id="1">Quick View</button>
+                                <button class="action-btn wishlist">♡</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-rating">★★★★★ <span>(48)</span></div>
+                            <h3 class="product-name">Pearl Drop Earrings</h3>
+                            <div class="product-price">
+                                <span class="current">₹1,299</span>
+                                <span class="original">₹1,999</span>
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-badge sale">SALE 💝</div>
+                        <div class="product-img">
+                            <!-- Replace with real product image -->
+                            <img src="https://images.unsplash.com/photo-1611085583191-a3b181a88401?w=300&h=350&fit=crop"
+                                alt="Gold Chain Necklace" class="img-front">
+                            <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=300&h=350&fit=crop"
+                                alt="Gold Chain Necklace Back" class="img-back">
+                            <div class="product-actions">
+                                <button class="action-btn quick-view" data-id="2">Quick View</button>
+                                <button class="action-btn wishlist">♡</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-rating">★★★★☆ <span>(32)</span></div>
+                            <h3 class="product-name">Gold Chain Necklace</h3>
+                            <div class="product-price">
+                                <span class="current">₹2,499</span>
+                                <span class="original">₹3,499</span>
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-badge new">NEW ✨</div>
+                        <div class="product-img">
+                            <!-- Replace with real product image -->
+                            <img src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=300&h=350&fit=crop"
+                                alt="Crystal Bracelet Set" class="img-front">
+                            <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=300&h=350&fit=crop"
+                                alt="Crystal Bracelet Set Back" class="img-back">
+                            <div class="product-actions">
+                                <button class="action-btn quick-view" data-id="3">Quick View</button>
+                                <button class="action-btn wishlist">♡</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-rating">★★★★★ <span>(67)</span></div>
+                            <h3 class="product-name">Crystal Bracelet Set</h3>
+                            <div class="product-price">
+                                <span class="current">₹899</span>
+                                <span class="original">₹1,299</span>
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img">
+                            <!-- Replace with real product image -->
+                            <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=300&h=350&fit=crop"
+                                alt="Designer Clutch Bag" class="img-front">
+                            <img src="https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?w=300&h=350&fit=crop"
+                                alt="Designer Clutch Bag Back" class="img-back">
+                            <div class="product-actions">
+                                <button class="action-btn quick-view" data-id="4">Quick View</button>
+                                <button class="action-btn wishlist">♡</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-rating">★★★★☆ <span>(29)</span></div>
+                            <h3 class="product-name">Designer Clutch Bag</h3>
+                            <div class="product-price">
+                                <span class="current">₹1,799</span>
+                                <span class="original">₹2,299</span>
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-badge hot">HOT 🔥</div>
+                        <div class="product-img">
+                            <!-- Replace with real product image -->
+                            <img src="https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=300&h=350&fit=crop"
+                                alt="Statement Ring Set" class="img-front">
+                            <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=300&h=350&fit=crop"
+                                alt="Statement Ring Set Back" class="img-back">
+                            <div class="product-actions">
+                                <button class="action-btn quick-view" data-id="5">Quick View</button>
+                                <button class="action-btn wishlist">♡</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-rating">★★★★★ <span>(54)</span></div>
+                            <h3 class="product-name">Statement Ring Set</h3>
+                            <div class="product-price">
+                                <span class="current">₹699</span>
+                                <span class="original">₹999</span>
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img">
+                            <!-- Replace with real product image -->
+                            <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=300&h=350&fit=crop"
+                                alt="Premium Gift Hamper" class="img-front">
+                            <img src="https://images.unsplash.com/photo-1607469256872-48f39c57bb3a?w=300&h=350&fit=crop"
+                                alt="Premium Gift Hamper Back" class="img-back">
+                            <div class="product-actions">
+                                <button class="action-btn quick-view" data-id="6">Quick View</button>
+                                <button class="action-btn wishlist">♡</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-rating">★★★★★ <span>(89)</span></div>
+                            <h3 class="product-name">Premium Gift Hamper</h3>
+                            <div class="product-price">
+                                <span class="current">₹2,999</span>
+                                <span class="original">₹4,499</span>
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn next" id="carouselNext">❯</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== OFFERS & DEALS ==================== -->
+    <section class="offers section" id="offers">
+        <div class="container">
+            <div class="offers-grid">
+                <div class="offer-card offer-large">
+                    <div class="offer-content">
+                        <span class="offer-tag">Festival Sale</span>
+                        <h3>Up to 50% OFF</h3>
+                        <p>On all festival collections</p>
+                        <a href="#" class="btn btn-primary">Shop Festival</a>
+                    </div>
+                    <div class="offer-badge animated">🎉 LIMITED TIME</div>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-content">
+                        <span class="offer-tag">Special Deal</span>
+                        <h3>Buy 1 Get 1</h3>
+                        <p>On selected earrings</p>
+                        <a href="#" class="btn btn-outline">View Deals</a>
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-content">
+                        <span class="offer-tag">Flash Sale</span>
+                        <h3>Flat 40% OFF</h3>
+                        <p>On all handbags</p>
+                        <a href="#" class="btn btn-outline">Shop Bags</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== BEST SELLERS ==================== -->
+    <section class="best-sellers section" id="best-sellers">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Top Picks</span>
+                <h2 class="section-title">Best Sellers</h2>
+                <p class="section-subtitle">Customer favorites you'll love</p>
+            </div>
+            <div class="bestsellers-grid">
+                <div class="product-card animate-on-scroll">
+                    <div class="product-badge hot">BESTSELLER</div>
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1599643477877-530eb83abc8e?w=300&h=350&fit=crop"
+                            alt="Traditional Jhumka Set" class="img-front">
+                        <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=300&h=350&fit=crop"
+                            alt="Traditional Jhumka Set Back" class="img-back">
+                        <div class="product-actions">
+                            <button class="action-btn quick-view" data-id="7">Quick View</button>
+                            <button class="action-btn wishlist">♡</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">★★★★★ <span>(156)</span></div>
+                        <h3 class="product-name">Traditional Jhumka Set</h3>
+                        <div class="product-price">
+                            <span class="current">₹1,599</span>
+                            <span class="original">₹2,299</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card animate-on-scroll">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=300&h=350&fit=crop"
+                            alt="Leather Tote Bag" class="img-front">
+                        <img src="https://images.unsplash.com/photo-1591561954557-26941169b49e?w=300&h=350&fit=crop"
+                            alt="Leather Tote Bag Back" class="img-back">
+                        <div class="product-actions">
+                            <button class="action-btn quick-view" data-id="8">Quick View</button>
+                            <button class="action-btn wishlist">♡</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">★★★★★ <span>(98)</span></div>
+                        <h3 class="product-name">Leather Tote Bag</h3>
+                        <div class="product-price">
+                            <span class="current">₹3,299</span>
+                            <span class="original">₹4,999</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card animate-on-scroll">
+                    <div class="product-badge sale">30% OFF</div>
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=300&h=350&fit=crop"
+                            alt="Diamond Pendant" class="img-front">
+                        <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=300&h=350&fit=crop"
+                            alt="Diamond Pendant Back" class="img-back">
+                        <div class="product-actions">
+                            <button class="action-btn quick-view" data-id="9">Quick View</button>
+                            <button class="action-btn wishlist">♡</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">★★★★☆ <span>(73)</span></div>
+                        <h3 class="product-name">Diamond Pendant</h3>
+                        <div class="product-price">
+                            <span class="current">₹4,199</span>
+                            <span class="original">₹5,999</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card animate-on-scroll">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1513885535751-8b9238bd345a?w=300&h=350&fit=crop"
+                            alt="Wedding Gift Set" class="img-front">
+                        <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=300&h=350&fit=crop"
+                            alt="Wedding Gift Set Back" class="img-back">
+                        <div class="product-actions">
+                            <button class="action-btn quick-view" data-id="10">Quick View</button>
+                            <button class="action-btn wishlist">♡</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">★★★★★ <span>(124)</span></div>
+                        <h3 class="product-name">Wedding Gift Set</h3>
+                        <div class="product-price">
+                            <span class="current">₹5,499</span>
+                            <span class="original">₹7,999</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== NEW ARRIVALS ==================== -->
+    <section class="new-arrivals section" id="new-arrivals">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Just In</span>
+                <h2 class="section-title">New Arrivals</h2>
+                <p class="section-subtitle">Fresh styles you haven't seen yet</p>
+            </div>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="jewelry">Jewelry</button>
+                <button class="filter-btn" data-filter="gifts">Gifts</button>
+                <button class="filter-btn" data-filter="bags">Bags</button>
+            </div>
+            <div class="new-arrivals-grid" id="newArrivalsGrid">
+                <div class="product-card animate-on-scroll" data-category="jewelry">
+                    <div class="product-badge new">NEW ✨</div>
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1630019852942-f89202989a59?w=300&h=350&fit=crop"
+                            alt="Rose Gold Hoops" class="img-front">
+                        <div class="product-actions">
+                            <button class="action-btn quick-view" data-id="11">Quick View</button>
+                            <button class="action-btn wishlist">♡</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">★★★★★ <span>(12)</span></div>
+                        <h3 class="product-name">Rose Gold Hoops</h3>
+                        <div class="product-price"><span class="current">₹999</span></div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card animate-on-scroll" data-category="bags">
+                    <div class="product-badge new">NEW ✨</div>
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?w=300&h=350&fit=crop"
+                            alt="Sling Crossbody" class="img-front">
+                        <div class="product-actions">
+                            <button class="action-btn quick-view" data-id="12">Quick View</button>
+                            <button class="action-btn wishlist">♡</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">★★★★☆ <span>(8)</span></div>
+                        <h3 class="product-name">Sling Crossbody</h3>
+                        <div class="product-price"><span class="current">₹1,899</span></div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card animate-on-scroll" data-category="gifts">
+                    <div class="product-badge new">NEW ✨</div>
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1607469256872-48f39c57bb3a?w=300&h=350&fit=crop"
+                            alt="Birthday Surprise Box" class="img-front">
+                        <div class="product-actions">
+                            <button class="action-btn quick-view" data-id="13">Quick View</button>
+                            <button class="action-btn wishlist">♡</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">★★★★★ <span>(15)</span></div>
+                        <h3 class="product-name">Birthday Surprise Box</h3>
+                        <div class="product-price"><span class="current">₹2,499</span></div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card animate-on-scroll" data-category="jewelry">
+                    <div class="product-badge new">NEW ✨</div>
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=300&h=350&fit=crop"
+                            alt="Layered Necklace" class="img-front">
+                        <div class="product-actions">
+                            <button class="action-btn quick-view" data-id="14">Quick View</button>
+                            <button class="action-btn wishlist">♡</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">★★★★☆ <span>(22)</span></div>
+                        <h3 class="product-name">Layered Necklace</h3>
+                        <div class="product-price"><span class="current">₹1,799</span></div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FESTIVAL COLLECTION ==================== -->
+    <section class="festival-collection section" id="festival">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Celebrate</span>
+                <h2 class="section-title">Festival Collection</h2>
+                <p class="section-subtitle">Special gifts for special occasions</p>
+            </div>
+            <div class="festival-grid">
+                <div class="festival-card" data-festival="diwali">
+                    <div class="festival-img">
+                        <img src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=400&h=300&fit=crop"
+                            alt="Diwali Collection">
+                    </div>
+                    <div class="festival-content">
+                        <h3>Diwali Specials</h3>
+                        <p>Light up celebrations with our exclusive Diwali gift hampers</p>
+                        <a href="#" class="btn btn-gold">Explore</a>
+                    </div>
+                </div>
+                <div class="festival-card" data-festival="wedding">
+                    <div class="festival-img">
+                        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=400&h=300&fit=crop"
+                            alt="Wedding Collection">
+                    </div>
+                    <div class="festival-content">
+                        <h3>Wedding Gifts</h3>
+                        <p>Make their big day special with luxurious wedding presents</p>
+                        <a href="#" class="btn btn-gold">Explore</a>
+                    </div>
+                </div>
+                <div class="festival-card" data-festival="birthday">
+                    <div class="festival-img">
+                        <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?w=400&h=300&fit=crop"
+                            alt="Birthday Collection">
+                    </div>
+                    <div class="festival-content">
+                        <h3>Birthday Surprises</h3>
+                        <p>Unique gifts to make birthdays unforgettable</p>
+                        <a href="#" class="btn btn-gold">Explore</a>
+                    </div>
+                </div>
+                <div class="festival-card" data-festival="anniversary">
+                    <div class="festival-img">
+                        <img src="https://images.unsplash.com/photo-1518568403628-df55701ade9e?w=400&h=300&fit=crop"
+                            alt="Anniversary Collection">
+                    </div>
+                    <div class="festival-content">
+                        <h3>Anniversary Love</h3>
+                        <p>Celebrate years of love with romantic gift sets</p>
+                        <a href="#" class="btn btn-gold">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== GIFT FINDER ==================== -->
+    <section class="gift-finder section" id="gift-finder">
+        <div class="container">
+            <div class="gift-finder-wrapper">
+                <div class="gift-finder-content">
+                    <span class="section-tag">Personalized</span>
+                    <h2>Find the Perfect Gift</h2>
+                    <p>Let us help you discover the ideal present for your loved ones</p>
+                    <div class="gift-finder-form">
+                        <div class="form-group">
+                            <label>Occasion</label>
+                            <select id="giftOccasion">
+                                <option value="">Select Occasion</option>
+                                <option value="birthday">Birthday</option>
+                                <option value="wedding">Wedding</option>
+                                <option value="anniversary">Anniversary</option>
+                                <option value="festival">Festival</option>
+                                <option value="valentines">Valentine's Day</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Budget</label>
+                            <select id="giftBudget">
+                                <option value="">Select Budget</option>
+                                <option value="under500">Under ₹500</option>
+                                <option value="500-1000">₹500 - ₹1,000</option>
+                                <option value="1000-2000">₹1,000 - ₹2,000</option>
+                                <option value="2000-5000">₹2,000 - ₹5,000</option>
+                                <option value="above5000">Above ₹5,000</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Recipient</label>
+                            <select id="giftRecipient">
+                                <option value="">Select Recipient</option>
+                                <option value="wife">Wife</option>
+                                <option value="mother">Mother</option>
+                                <option value="sister">Sister</option>
+                                <option value="friend">Friend</option>
+                                <option value="colleague">Colleague</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-primary" id="findGiftBtn">Find Gifts ✨</button>
+                    </div>
+                </div>
+                <div class="gift-finder-results" id="giftResults">
+                    <div class="gift-results-placeholder">
+                        <span class="gift-icon">🎁</span>
+                        <p>Select your preferences to see personalized gift recommendations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TESTIMONIALS ==================== -->
+    <section class="testimonials section" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Reviews</span>
+                <h2 class="section-title">What Our Customers Say</h2>
+                <p class="section-subtitle">Real experiences from our valued customers</p>
+            </div>
+            <div class="testimonials-carousel" id="testimonialsCarousel">
+                <div class="testimonial-card active">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"Absolutely stunning jewelry! The quality exceeded my expectations. The
+                        packaging was beautiful and delivery was quick. Will definitely order again!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=60&h=60&fit=crop"
+                            alt="Customer">
+                        <div>
+                            <h4>Priya Sharma</h4>
+                            <span>Verified Buyer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"Ordered a gift hamper for my friend's wedding and it was perfect! The
+                        presentation was luxurious and she loved every item in it. Thank you!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=60&h=60&fit=crop"
+                            alt="Customer">
+                        <div>
+                            <h4>Ananya Patel</h4>
+                            <span>Verified Buyer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★☆</div>
+                    <p class="testimonial-text">"Great collection of bags and accessories. The customer service was very
+                        helpful in suggesting the perfect gift for my mother. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop"
+                            alt="Customer">
+                        <div>
+                            <h4>Ravi Kumar</h4>
+                            <span>Verified Buyer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-dots" id="testimonialDots"></div>
+        </div>
+    </section>
+
+    <!-- ==================== INSTAGRAM GALLERY ==================== -->
+    <section class="instagram-gallery section" id="instagram">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">@raviannastore</span>
+                <h2 class="section-title">Shop the Look</h2>
+                <p class="section-subtitle">Get inspired by our Instagram feed</p>
+            </div>
+            <div class="instagram-grid">
+                <div class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=300&h=300&fit=crop"
+                        alt="Instagram Post">
+                    <div class="instagram-overlay">
+                        <span>Shop This Look</span>
+                    </div>
+                </div>
+                <div class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=300&h=300&fit=crop"
+                        alt="Instagram Post">
+                    <div class="instagram-overlay">
+                        <span>Shop This Look</span>
+                    </div>
+                </div>
+                <div class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=300&h=300&fit=crop"
+                        alt="Instagram Post">
+                    <div class="instagram-overlay">
+                        <span>Shop This Look</span>
+                    </div>
+                </div>
+                <div class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=300&h=300&fit=crop"
+                        alt="Instagram Post">
+                    <div class="instagram-overlay">
+                        <span>Shop This Look</span>
+                    </div>
+                </div>
+                <div class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=300&h=300&fit=crop"
+                        alt="Instagram Post">
+                    <div class="instagram-overlay">
+                        <span>Shop This Look</span>
+                    </div>
+                </div>
+                <div class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=300&h=300&fit=crop"
+                        alt="Instagram Post">
+                    <div class="instagram-overlay">
+                        <span>Shop This Look</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== NEWSLETTER ==================== -->
+    <section class="newsletter section" id="newsletter">
+        <div class="container">
+            <div class="newsletter-wrapper">
+                <div class="newsletter-content">
+                    <h2>Get Exclusive Offers & Early Access</h2>
+                    <p>Subscribe to our newsletter and be the first to know about new arrivals, special offers, and
+                        exclusive deals!</p>
+                </div>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe ✨</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=500&h=600&fit=crop"
+                        alt="About Ravi Anna Fancy Store">
+                </div>
+                <div class="about-content">
+                    <span class="section-tag">Our Story</span>
+                    <h2>About Ravi Anna Fancy Store</h2>
+                    <p>Founded with a passion for bringing luxury and elegance to every celebration, Ravi Anna Fancy
+                        Store has been serving customers with the finest collection of jewelry, accessories, and gift
+                        items for over a decade.</p>
+                    <p>We believe that every gift should tell a story and every piece of jewelry should make you feel
+                        special. Our carefully curated collections feature handpicked items that blend traditional
+                        craftsmanship with modern designs.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">10K+</span>
+                            <span class="stat-label">Happy Customers</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Products</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <span class="logo-icon">✦</span>
+                        <span class="logo-text">Ravi Anna</span>
+                        <span class="logo-sub">Fancy Store</span>
+                    </div>
+                    <p>Your destination for premium gifts, elegant jewelry, and beautiful accessories. Making every
+                        occasion special since 2014.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor"
+                                    stroke-width="2" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none"
+                                    stroke="currentColor" stroke-width="2" />
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Pinterest">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2" />
+                                <path d="M8 12c0-3 2-5 4-5s4 2 4 5-2 8-4 8-2-3-2-3" fill="none" stroke="currentColor"
+                                    stroke-width="2" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#shop">Shop</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#new-arrivals">New Arrivals</a></li>
+                        <li><a href="#offers">Offers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Customer Care</h4>
+                    <ul>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Track Order</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Policies</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul class="contact-info">
+                        <li>📍 123 Fashion Street, Mumbai, India</li>
+                        <li>📞 +91 98765 43210</li>
+                        <li>✉️ hello@raviannafancy.com</li>
+                        <li>🕐 Mon-Sat: 10AM - 8PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="payment-icons">
+                    <span>We Accept:</span>
+                    <img src="https://img.icons8.com/color/48/visa.png" alt="Visa" width="40">
+                    <img src="https://img.icons8.com/color/48/mastercard.png" alt="Mastercard" width="40">
+                    <img src="https://img.icons8.com/color/48/paypal.png" alt="PayPal" width="40">
+                    <img src="https://img.icons8.com/color/48/google-pay-india.png" alt="Google Pay" width="40">
+                    <img src="https://img.icons8.com/color/48/paytm.png" alt="Paytm" width="40">
+                </div>
+                <p>&copy; 2024 Ravi Anna Fancy Store. All Rights Reserved. Made with ❤️ in India</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== QUICK VIEW MODAL ==================== -->
+    <div class="modal" id="quickViewModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img src="" alt="Product" id="modalImage">
+                </div>
+                <div class="modal-info">
+                    <h2 id="modalTitle">Product Name</h2>
+                    <div class="modal-rating">★★★★★ <span id="modalReviews">(0 reviews)</span></div>
+                    <div class="modal-price">
+                        <span class="current" id="modalPrice">₹0</span>
+                        <span class="original" id="modalOriginalPrice">₹0</span>
+                    </div>
+                    <p class="modal-desc" id="modalDesc">Product description goes here...</p>
+                    <div class="modal-quantity">
+                        <label>Quantity:</label>
+                        <div class="quantity-selector">
+                            <button class="qty-btn minus">-</button>
+                            <input type="number" value="1" min="1" max="10" id="modalQty">
+                            <button class="qty-btn plus">+</button>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary modal-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== IMAGE MODAL ==================== -->
+    <div class="image-modal" id="imageModal">
+        <button class="image-modal-close" id="imageModalClose">&times;</button>
+        <img src="" alt="Full Image" id="imageModalImg">
+    </div>
+
+    <!-- ==================== BACK TO TOP ==================== -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
